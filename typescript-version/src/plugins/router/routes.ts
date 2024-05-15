@@ -9,6 +9,15 @@ export const routes = [
         component: () => import('@/pages/dashboard.vue'),
       },
       {
+        path: '/apps/ecommerce/products',
+        component: () => import('@/pages/apps/ecommerce/products/index.vue'),
+      },
+      {
+        name: 'apps-ecommerce-products-id',
+        path: '/apps/ecommerce/products/:id',
+        component: () => import('@/pages/apps/ecommerce/products/[id].vue'),
+      },
+      {
         path: 'account-settings',
         component: () => import('@/pages/account-settings.vue'),
       },

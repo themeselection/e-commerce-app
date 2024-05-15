@@ -4,7 +4,11 @@ import DefaultLayoutWithVerticalNav from './components/DefaultLayoutWithVertical
 
 <template>
   <DefaultLayoutWithVerticalNav>
-    <RouterView />
+    <RouterView #="{Component}">
+      <Suspense :timeout="0">
+        <Component :is="Component" />
+      </Suspense>
+    </RouterView>
   </DefaultLayoutWithVerticalNav>
 </template>
 

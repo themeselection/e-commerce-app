@@ -29,15 +29,7 @@ import VerticalNavLink from '@layouts/components/VerticalNavLink.vue'
         badgeClass: 'bg-light-primary text-primary',
       }"
     />
-    <VerticalNavLink
-      :item="{
-        title: 'ECommerce',
-        href: 'https://demos.themeselection.com/materio-vuetify-vuejs-admin-template/demo-1/dashboards/ecommerce',
-        target: '_blank',
-        badgeContent: 'Pro',
-        badgeClass: 'bg-light-primary text-primary',
-      }"
-    />
+
     <VerticalNavLink
       :item="{
         title: 'Academy',
@@ -105,11 +97,35 @@ import VerticalNavLink from '@layouts/components/VerticalNavLink.vue'
   </VerticalNavGroup>
 
   <!-- 👉 Apps & Pages -->
+
   <VerticalNavSectionTitle
     :item="{
       heading: 'Apps & Pages',
     }"
   />
+
+  <VerticalNavGroup
+    :item="{
+      title: 'e-commerce',
+      icon: 'ri-shopping-cart-line',
+    }"
+  >
+    <VerticalNavLink
+      :item="{
+        title: 'Shop',
+        icon: 'ri-user-settings-line',
+        to: '/apps/ecommerce/products',
+      }"
+    />
+    <VerticalNavLink
+      :item="{
+        title: 'Product',
+        icon: 'ri-user-settings-line',
+        to: { name: 'apps-ecommerce-products-id', params: { id: 1 } },
+      }"
+    />
+  </VerticalNavGroup>
+
   <VerticalNavLink
     :item="{
       title: 'Permissions',

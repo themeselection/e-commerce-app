@@ -1,9 +1,19 @@
 <script lang="ts" setup>
 import type { NavLink } from '@layouts/types'
 
-defineProps<{
+const props = defineProps<{
   item: NavLink
 }>()
+
+const router = useRouter()
+
+const isRouteActive = computed(() => {
+  let name: any = props.item.to
+  if (props.item.to && typeof props.item.to !== 'string')
+    name = router.resolve(props.item.to).name
+
+  return router.currentRoute.value.name && router.currentRoute.value.name === name
+})
 </script>
 
 <template>
@@ -16,6 +26,7 @@ defineProps<{
       :to="item.to"
       :href="item.href"
       :target="item.target"
+      :class="{ 'router-link-active router-link-exact-active': isRouteActive }"
     >
       <VIcon
         :icon="item.icon || 'ri-checkbox-blank-circle-line'"

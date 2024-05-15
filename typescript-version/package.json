@@ -53,6 +53,7 @@
     "eslint-plugin-sonarjs": "^0.23.0",
     "eslint-plugin-unicorn": "^50.0.1",
     "eslint-plugin-vue": "^9.19.2",
+    "msw": "^2.2.14",
     "postcss-html": "^1.5.0",
     "postcss-scss": "^4.0.9",
     "sass": "^1.69.4",
@@ -78,5 +79,10 @@
   "overrides": {
     "stylelint-order": "6.0.3"
   },
-  "packageManager": "pnpm@8.6.2"
+  "packageManager": "pnpm@8.6.2",
+  "msw": {
+    "workerDirectory": [
+      "public"
+    ]
+  }
 }
