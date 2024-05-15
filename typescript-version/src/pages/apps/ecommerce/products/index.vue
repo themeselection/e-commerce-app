@@ -27,16 +27,15 @@ const { data: products } = await useFetch('/api/ecommerce/products').json()
               :model-value="product.rating"
               readonly
               density="compact"
+              class="my-3"
             />
-          </VCardText>
-          <VCardActions>
             <VBtn
               block
               @click="() => router.push({ path: `/apps/ecommerce/products/${product.id}` })"
             >
               Buy Now
             </VBtn>
-          </VCardActions>
+          </VCardText>
         </VCard>
       </template>
     </div>
