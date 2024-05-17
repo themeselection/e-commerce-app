@@ -36,8 +36,10 @@ const quantity = ref(0)
           </div>
 
           <div>
-            <p>{{ product.productDescription }} Lorem ipsum dolor, sit amet consectetur adipisicing elit. Dolor eum quam dolore ratione aspernatur nobis. Assumenda dicta voluptatibus reiciendis repudiandae?</p>
-
+            <p>
+              {{ product.productDescription }}
+              Lorem ipsum dolor, sit amet consectetur adipisicing elit. Dolor eum quam dolore ratione aspernatur nobis. Assumenda dicta voluptatibus reiciendis repudiandae?
+            </p>
             <VRating
               :model-value="product.rating"
               readonly
@@ -83,31 +85,6 @@ const quantity = ref(0)
                 Lorem ipsum, dolor sit amet consectetur adipisicing elit. Culpa, deserunt!
               </VListItem>
             </VList>
-
-            <!--
-              <div
-              v-if="quantity"
-              class="d-flex gap-1 align-center mb-4"
-              >
-              <VBtnToggle density="compact">
-              <VBtn
-              icon="ri-subtract-line"
-              rounded
-              density="compact"
-              size="small"
-              @click="quantity > 0 ? quantity -= 1 : 1"
-              />
-              <VBtn variant="text">
-              {{ quantity }}
-              </VBtn>
-              <VBtn
-              icon="ri-add-line"
-              rounded
-              @click="quantity += 1"
-              />
-              </VBtnToggle>
-              </div>
-            -->
 
             <VBtn
               prepend-icon="ri-shopping-cart-line"

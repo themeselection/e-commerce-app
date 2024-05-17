@@ -113,14 +113,12 @@ import VerticalNavLink from '@layouts/components/VerticalNavLink.vue'
     <VerticalNavLink
       :item="{
         title: 'Shop',
-        icon: 'ri-user-settings-line',
         to: '/apps/ecommerce/products',
       }"
     />
     <VerticalNavLink
       :item="{
         title: 'Product',
-        icon: 'ri-user-settings-line',
         to: { name: 'apps-ecommerce-products-id', params: { id: 1 } },
       }"
     />
