@@ -1,9 +1,7 @@
 <p align="center"></p>
 
 <h1 align="center">
-   <a href="https://themeselection.com/item/materio-free-vuetify-vuejs-admin-template/" target="_blank" align="center">
    Ecommerce App
-   </a>
 </h1>
 
 ## Introduction 🚀
