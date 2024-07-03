@@ -46,7 +46,7 @@ pnpm run dev
 
 ## Features
 
-- Vue 3 & Vuetify 3
+- Contains Listing page for products
 - Responsive e-commerce app
 - Build using msw
 - Ready to use
